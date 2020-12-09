@@ -22,4 +22,11 @@ print(bus_dict["region"])
 businesses = response.json()["businesses"]
 high_rate_bus = [item["name"]
                  for item in businesses if item["rating"] > 4]
-print(high_rate_bus)
+# print(high_rate_bus)
+bus_dict = response.json()
+print(bus_dict["businesses"])
+# dict_keys(['id', 'alias', 'name', 'image_url', 'is_closed', 'url', 'review_count',
+#            'categories', 'rating', 'coordinates', 'transactions', 'price', 'location',
+#            'phone', 'display_phone', 'distance'])
+# all_names = [[item["name"]for item in businesses], [item["categories"] for item in businesses]]
+# print(all_names)
